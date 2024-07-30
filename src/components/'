@@ -1,0 +1,56 @@
+/* landing wrappers */
+
+.toc-wrapper {
+    height: min-content;
+    width: 100%;
+    display: grid;
+    background-color: white;
+    
+    --titleverybig: 3.5rem;
+    --subtitleverybig: 2.5rem;
+
+    --titlebig: 3rem;
+    --subbig: 2rem;
+
+    --titlemed: 2rem;
+    --submed: 1.5rem;
+
+    --titlesmall: 1.5rem;
+    --subsmall: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+.toc-wrapper .title-wrapper {
+    position: absolute;
+    top: 20vh;
+}
+
+
+.toc-wrapper .title {
+    font-size: var(--titleverybig);
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.toc-wrapper .text-wrapper {
+    padding-top: 20vh;
+}
+
+@media screen and (max-width: 1000px) {
+    .page-wrapper .title {
+        font-size: var(--titlemed);
+    }
+    .page-wrapper .subtitle {
+        font-size: var(--submed);
+    }
+
+    .page-wrapper p {
+        font-size: var(--subsmall);
+    }
+}
