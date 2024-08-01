@@ -3,9 +3,11 @@ import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide'
 import Flash from 'react-reveal/Flash';
 import Jump from 'react-reveal/Jump'
-
+import { Zoom } from 'react-reveal';
 import {Button, Card } from 'react-bootstrap';
 import chevron from './chevron.png'
+import engn from './engineer.jpeg'
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {    
 	
@@ -13,6 +15,13 @@ const HomePage = () => {
 
 	return(
 	<div>
+		<Zoom out>
+			<div style={{opacity:'20%'}} className='box1'/>
+		</Zoom>
+		<Zoom out delay={200}>
+			<div className='box2'/>
+		</Zoom>
+
 		<div className="home-wrapper">
 			<div className="home-carousel">
 				<div className="title-wrapper" style={{backgroundColor: "transparent", top: "20vh"}}>
@@ -35,7 +44,7 @@ const HomePage = () => {
 					</div>
 					
 					<div class="subtitle" style={{position: "relative", wordWrap: "break-word", backgroundColor: "transparent"}}>
-						<Fade top delay="400"> Creating novel Engineering and Medical solutions </Fade>
+						<Fade top delay="400"> Living well starts here </Fade>
 					</div>
 					
 					<Fade delay={1000}>
@@ -44,6 +53,8 @@ const HomePage = () => {
 						</Jump>
 						<p> Learn More </p>
 					</Fade>
+					
+					<div className='colorbar'/>
 				</div>
 
 
@@ -63,13 +74,17 @@ const HomePage = () => {
 						</Fade>
 						<Fade left delay={400}>
 							<div className="about-content">
-								<p> Amviston was founded on a vision to develop innovative systems and solutions that promotes wellbeing of people of 
-all ages, using environment friendly sustainable methods, while minimizing impact to our environment. We work on 
-identifying needs of the society in a wholistic approach and take steps to find optimized solutions by exploring newer 
-frontiers of science and technology. </p>
+								<p> At Amviston, we believe in wholesome wellness, empowering individuals to take care of their health through natural and holistic solutions for the body, soul, and mind.
+Our mission is to help individuals live life to the full, every day.
+With a strong portfolio of customized healthcare products, we try to address the root cause of your health issues and offer resources, medical kits, and solutions that are designed to help you be in your best possible health.  </p>
 							</div>
-							<Button variant='outline-dark' size='lg'> Learn More </Button>
+		{//<Button variant='outline-dark' size='lg'> Learn More </Button>
+			}
 						</Fade>
+					</div>
+					
+					<div className='about-right'>
+						<img src={engn}/>
 					</div>
 				</div>
 
@@ -86,41 +101,46 @@ frontiers of science and technology. </p>
 				</Fade>
 
 				<div className = "cards">
+
+		
 					<Fade top delay = {200}>
 						<Card className="content-cards" style={{borderRadius: "20px"}}>
 							<Card.Body>
 								<Card.Title> <p style={{fontSize: "1.8rem", fontWeight:"bold"}}> Engineering Services </p> </Card.Title>
 								<Card.Text>
-									<p style={{fontSize: "1.4rem"}}>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repr </p>
+									<p style={{fontSize: "1.4rem"}}>  
+
+W innovate healthcare with advanced engineering services, including medical device design, custom software, and systems integration. Trust our expertise to enhance patient care and streamline operations.
+		</p>
 								</Card.Text>
 							</Card.Body>
 						</Card>
 					</Fade>
-					
-					<Fade top delay = {400}>
-						<Card className="content-cards" style={{borderRadius: "20px"}}>
-							<Card.Body>
-								<Card.Title> <p style={{fontSize: "1.8rem", fontWeight:"bold"}}> Medical devices and systems </p>  </Card.Title>
-								<Card.Text>
-									<p style={{fontSize: "1.4rem"}}> o laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null u fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culp</p>
-								</Card.Text>
-							</Card.Body>
-						</Card>
-					</Fade>
-					
+			
 					<Fade top delay = {600}>
 						<Card className="content-cards" style={{borderRadius: "20px"}}>
 							<Card.Body>
 								<Card.Title> <p style={{fontSize: "1.8rem", fontWeight:"bold"}}> Professional public solutions </p> </Card.Title>
 								<Card.Text>
-									<p style={{fontSize: "1.4rem"}}> u fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+									<p style={{fontSize: "1.4rem"}}> We provide professional public solutions that enhance community health and well-being. Our expertise ensures effective, compliant services that address public health needs and improve overall quality of life. 
 									</p>
 								</Card.Text>
 							</Card.Body>
 						</Card>
 					</Fade>
 
-				</div>  
+			
+					<Fade top delay = {400}>
+						<Card className="content-cards" style={{borderRadius: "20px"}}>
+							<Card.Body>
+								<Card.Title> <p style={{fontSize: "1.8rem", fontWeight:"bold"}}> Medical devices and systems </p>  </Card.Title>
+								<Card.Text>
+									<p style={{fontSize: "1.4rem"}}> We excel in creating innovative medical devices and systems. Our expertise ensures top-quality, compliant solutions that improve patient care and streamline healthcare operations.</p>
+								</Card.Text>
+							</Card.Body>
+						</Card>
+					</Fade>
+								</div>  
 			</div>
 
 			<div className='interested-wrapper' style={{
@@ -138,7 +158,7 @@ frontiers of science and technology. </p>
 				</Flash>
 
 				<Slide left>
-					<Button style={{width: "20vw", minWidth: "200px"}} variant='outline-dark' size='lg' > Click Here ⇒ </Button>
+					<Button style={{width: "20vw", minWidth: "200px"}} variant='outline-dark' size='lg'  to={"@mailto:info@amviston.com"}> Email info@amviston.com </Button>
 				</Slide>
 			</div>
 		</div>

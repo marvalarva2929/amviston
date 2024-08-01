@@ -1,5 +1,29 @@
 #body-content {overflow: hidden;}
 
+.box1 {
+	width: 20vw;
+	height: 50vh;
+	position: absolute;
+	top:15vh;
+	left: 20vw;
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+	opacity: 30% !important;
+	background-color: #ffb6c1;
+}
+
+.box2 {
+	width: 20vw;
+	height: 50vh;
+	position: absolute;
+	top:30vh;
+	left: 60vw;
+	border-radius: 20px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+	opacity: 30% !important;
+	background-color: #ffb6c1;
+}
+
 /* Global styles */
 
 .home-wrapper {
@@ -73,6 +97,16 @@
 .carousel-img {
     width: 45vw;
     border-radius: 25px;
+}
+
+.colorbar {
+	position: absolute;
+	top:90vh;
+	left:0;
+	width:100vw;
+	height:10vh;
+	background-color:darkred;
+	--background: linear-gradient(#FADEFF 0%, #9A228E 38%, #610057 70%, #310023 100%)
 }
 
 /* picture styles */
@@ -196,7 +230,7 @@
 .about-right img {
     border-radius: 20px;
     width: 30vw;
-	transform: rotate(-10deg);
+	margin-top:3vh;
 }
 
 .about-title {
