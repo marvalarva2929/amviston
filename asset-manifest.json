@@ -11,7 +11,7 @@
     "453.cf127c7a.chunk.js.map": "/static/js/453.cf127c7a.chunk.js.map"
   },
   "entrypoints": [
-    "amviston/static/css/main.6b12a531.css",
-    "amviston/static/js/main.8b7da62b.js"
+    "static/css/main.6b12a531.css",
+    "static/js/main.8b7da62b.js"
   ]
 }
