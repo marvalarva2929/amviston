@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/amviston/static/css/main.83a79c7a.css",
-    "main.js": "/amviston/static/js/main.0289ba11.js",
+    "main.css": "/amviston/static/css/main.cc12279e.css",
+    "main.js": "/amviston/static/js/main.11372c2d.js",
     "static/js/453.cf127c7a.chunk.js": "/amviston/static/js/453.cf127c7a.chunk.js",
     "static/media/page2.png": "/amviston/static/media/page2.ea5b267a84104f4bc66a.png",
     "static/media/man.png": "/amviston/static/media/man.001144c39d872ac778f1.png",
     "static/media/page1.png": "/amviston/static/media/page1.4e619571506d9f4d5723.png",
+    "static/media/map.png": "/amviston/static/media/map.2873d82a6d15f2d8d58f.png",
     "static/media/page3.png": "/amviston/static/media/page3.74a0b741d6cafb1a2882.png",
     "static/media/logo.png": "/amviston/static/media/logo.3b693666048df877298b.png",
     "index.html": "/amviston/index.html",
     "static/media/triangle-mosaic.webp": "/amviston/static/media/triangle-mosaic.c2079e72caa20c2e6782.webp",
-    "main.83a79c7a.css.map": "/amviston/static/css/main.83a79c7a.css.map",
-    "main.0289ba11.js.map": "/amviston/static/js/main.0289ba11.js.map",
+    "main.cc12279e.css.map": "/amviston/static/css/main.cc12279e.css.map",
+    "main.11372c2d.js.map": "/amviston/static/js/main.11372c2d.js.map",
     "453.cf127c7a.chunk.js.map": "/amviston/static/js/453.cf127c7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83a79c7a.css",
-    "static/js/main.0289ba11.js"
+    "static/css/main.cc12279e.css",
+    "static/js/main.11372c2d.js"
   ]
 }
